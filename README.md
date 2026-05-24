@@ -11,6 +11,7 @@ This allows you to define shared skills at the root of a monorepo or a project h
 ## Installation
 
 ### Via Local Path
+
 Add the path to this directory to your `settings.json`:
 
 ```json
@@ -21,10 +22,10 @@ Add the path to this directory to your `settings.json`:
 }
 ```
 
-### Via Git/npm
+### Via git
 
 ```bash
-pi install git+https://github.com/your-username/pi-skills-walkup.git
+pi install git:github.com/niksilver/pi-skills-walkup.git
 ```
 
 ## How it works
@@ -32,4 +33,5 @@ pi install git+https://github.com/your-username/pi-skills-walkup.git
 The extension hooks into the `resources_discover` lifecycle event. Using `git rev-parse --show-toplevel`, it determines the repository boundary and walks up the directory tree, collecting all valid `.pi/skills` directories to be provide to the agent's resource manager.
 
 ## License
+
 MIT
