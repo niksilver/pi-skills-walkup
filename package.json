@@ -1,0 +1,15 @@
+{
+  "name": "pi-skills-walkup",
+  "version": "1.0.0",
+  "description": "Extension for pi.dev to load skills recursively from .pi/skills in the current and parent directories up to the git root.",
+  "main": "src/index.ts",
+  "type": "module",
+  "dependencies": {
+    "@earendil-works/pi-coding-agent": "^1.0.0"
+  },
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  }
+}
